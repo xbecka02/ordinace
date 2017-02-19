@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ortodoncie MUDr. Daša Hegerová</title>
+    <link rel="icon" type="image/png" href="resources/icon.jpg"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="top-bar">
+        <a href="http://www.facebook.com/" id="fb"></a>
+        <div class="dropdown">
+            <button class="dropbtn"><h3>MENU</h3></button>
+            <div class="dropdown-content">
+                <a href="#services" rel="" id="href-services" class="href-contact">Služby</a>
+                <a href="#contact" rel="" id="href-contact" class="href-contact">Kontakt</a>
+                <a href="#contactus" rel="" id="href-contactus" class="href-contactus">Napište nám!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <!-- HORNI LISTA-->
+        <div id="uvod" class="uvod">
+            <div id="uvod-div-top"></div>
+            <div id="uvod-div-content">
+                <h1>Ortodoncie MUDr. Daša Hegerová</h1>
+                <hr/>
+            </div>
+            <div id="uvod-div-bottom">
+                <img id="img-one" class="uvod-img" src="resources/white-empty.png" alt="empty">
+                <img id="img-two" class="uvod-img" src="resources/white-full.png" alt="full">
+                <img id="img-three" class="uvod-img" src="resources/white-empty.png" alt="empty">
+            </div>
+        </div>
+        <script>
+            document.getElementById("img-one").src = "resources/white-full.png";
+            document.getElementById("img-two").src = "resources/white-empty.png";
+            document.getElementById("img-three").src = "resources/white-empty.png";
+            document.getElementById("uvod").style.backgroundImage = "url('resources/one.png')";
+        </script>
+
+
+        <!-- POSKYTOVANE SLUZBY -->
+        <div id="services" class="services">
+            <div id="services-top">
+                <h2>Služby</h2>
+            </div>
+            <div id="services-content">
+                <div id="services-content-left-top">
+                    <img id="services-content-left-top-img" class="img-circle" src="resources/s1_grey.jpg" alt="empty">
+                    <h3>Rovnátka</h3>
+                    <div id="services-content-left-top-content">
+                        TEXT ABOUT...
+                    </div>
+                </div>
+                <div id="services-content-right-top">
+                    <img id="services-content-right-top-img" class="img-circle" src="resources/s2_gray.jpg" alt="empty">
+                    <h3>Hygiena</h3>
+                    <div id="services-content-right-top-content">
+                        TEXT ABOUT...
+                    </div>
+                </div>
+                <div id="services-content-left-bottom">
+                    <img id="services-content-left-bottom-img" class="img-circle" src="resources/s3_gray.jpg" alt="empty">
+                    <h3>Rentgen zubů</h3>
+                    <div id="services-content-left-bottom-content">
+                        TEXT ABOUT...
+                    </div>
+                </div>
+                <div id="services-content-right-bottom">
+                    <img id="services-content-right-bottom-img" class="img-circle" src="resources/s4_gray.jpg" alt="empty">
+                    <h3>Prodej potřeb</h3>
+                    <div id="services-content-right-bottom-content">
+                        TEXT ABOUT...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- KONTAKTNI UDAJE + MAPA POLOHY MISTA -->
+        <div id="contact" class="contact">
+            <div id="contact-content">
+                <a name="anchor1" id="anchor1"><h2>Kontakt</h2></a>
+                <div id="contact-content-left">
+                    <h3>Adresa</h3>
+                    <div id="contact-content-left-text">
+                        <p>Podorlická poliklinika s.r.o.</p>
+                        <p>provozovna Žamberk</p>
+                        <p>Náměstí Generála Knopa 837</p>
+                        <p>564 01 Žamberk</p>
+                    </div>
+                </div>
+                <div id="contact-content-right">
+                    <h3>Pracovní doba</h3>
+                    <table id="open-table">
+                        <tr>
+                            <td><b>Pondělí</b></td>
+                            <td>8 - 15</td>
+                        </tr>
+                        <tr>
+                            <td><b>Úterý</b></td>
+                            <td>8 - 15</td>
+                        </tr>
+                        <tr>
+                            <td><b>Středa</b></td>
+                            <td>8 - 15</td>
+                        </tr>
+                        <tr>
+                            <td><b>Čtvrtek</b></td>
+                            <td>8 - 15</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pátek</b></td>
+                            <td>8 - 12</td>
+                        </tr>
+                        <tr>
+                            <td><b>Sobota</b></td>
+                            <td>Zavřeno</td>
+                        </tr>
+                        <tr>
+                            <td><b>Neděle</b></td>
+                            <td>Zavřeno</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact-content-bottom">
+                    <table id="call-table">
+                        <tr>
+                            <td><b>Telefon</b></td>
+                            <td>+420 777 852 963</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email</b></td>
+                            <td>ordinace@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--<div class="contact-content-bottom" style="background-color: yellow;">asa</div>-->
+            </div>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var mapDiv = document.getElementById('map');
+                    var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 50.082269, lng: 16.462341},
+                        zoom: 17
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: {lat: 50.082269, lng: 16.462341},
+                        map: map,
+                        title: 'ortodoncie MUDr. Daša Hegerová'
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGBVmlkStSizxUve2z0iQiOv6zwawaSg&callback=initMap" async defer>
+            </script>
+        </div>
+
+        <!-- KONTAKTOVANI POMOCI ZASLANI EMAILU-->
+        <div id="contactus" class="contactus">
+            <div class="contactus-div">
+                <div id="contact-form" class="clearfix">
+                    <a name="myAnchor" id="myAnchor"><h2>Napište nám!</h2></a>
+                    <h3>Pro zaslání emailu vyplňte předložený formulář.</h3>
+                    <ul id="errors" class="">
+                        <li id="info">Omlouváme se, nastaly neočekávané problémy:</li>
+                    </ul>
+                    <p id="success">Děkujeme za zprávu, odpovíme jak jen to bude možné! :)</p>
+                    <form method="post" action="process.php">
+                        <label for="name">Jméno: <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" value="" placeholder="Jan Novak" required="required" autofocus="autofocus" />
+
+                        <label for="email">Emai: <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" value="" placeholder="JanNovak@email.cz" required="required" />
+
+                        <label for="message">Zpráva: <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Zde napište svou zprávu..." required="required" data-minlength="20"></textarea>
+
+                        <span id="loading"></span>
+                        <input type="submit" value="Odeslat" id="submit-button" />
+                        <div id="req-field-desc"><span class="required">*</span> označuje povinná pole</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
